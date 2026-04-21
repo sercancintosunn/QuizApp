@@ -8,7 +8,7 @@ Flutter ile geliştirilmiş, zamanlayıcılı çoktan seçmeli bilgi yarışmas�
 
 | Başlangıç Ekranı | Soru Ekranı (Normal) | Soru Ekranı (Süre Azaldı) | Sonuç Ekranı |
 |:---:|:---:|:---:|:---:|
-| ![Başlangıç](ss1_baslangic.png) | ![Soru Normal](ss2_soru_normal.png) | ![Soru Kırmızı](ss3_soru_kirmizi.png) | ![Sonuç](ss4_sonuc.png) |
+| ![Başlangıç](screenshots/ss1_baslangic.png) | ![Soru Normal](screenshots/ss2_soru_normal.png) | ![Soru Kırmızı](screenshots/ss3_soru_kirmizi.png) | ![Sonuç](screenshots/ss4_sonuc.png) |
 
 ---
 
