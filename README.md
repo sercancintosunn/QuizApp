@@ -1,17 +1,101 @@
-# quiz_app
+# 🧠 Quiz Uygulaması
 
-A new Flutter project.
+Flutter ile geliştirilmiş, zamanlayıcılı çoktan seçmeli bilgi yarışması uygulaması.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 Ekran Görüntüleri
 
-A few resources to get you started if this is your first Flutter project:
+| Başlangıç Ekranı | Soru Ekranı (Normal) | Soru Ekranı (Süre Azaldı) | Sonuç Ekranı |
+|:---:|:---:|:---:|:---:|
+| ![Başlangıç](ss1_baslangic.png) | ![Soru Normal](ss2_soru_normal.png) | ![Soru Kırmızı](ss3_soru_kirmizi.png) | ![Sonuç](ss4_sonuc.png) |
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✨ Özellikler
+
+- 📝 **10 Soruluk Quiz** — Tarih, bilim, edebiyat, coğrafya ve felsefe gibi farklı kategorilerde sorular
+- ⏱️ **Geri Sayım Sayacı** — Her soru için 15 saniyelik süre; süre dolunca otomatik olarak sonraki soruya geçilir
+- 🔴 **Dinamik Renk Uyarısı** — Kalan süre 5 saniyenin altına düştüğünde zamanlayıcı ve progress bar kırmızıya döner
+- 📊 **Progress Bar** — Kalan süreyi görsel olarak gösteren animasyonlu ilerleme çubuğu
+- 🏆 **Skor Ekranı** — Quiz sonunda toplam doğru sayısı gösterilir
+- 🔄 **Yeniden Başlatma** — Sonuç ekranından tek tuşla yeniden başlama imkânı
+- 📱 **Material 3 Tasarım** — Modern ve temiz kullanıcı arayüzü
+
+---
+
+## 🗂️ Proje Yapısı
+
+```
+quiz_uygulamasi/
+├── lib/
+│   └── main.dart          # Tüm uygulama kodu
+├── pubspec.yaml           # Bağımlılıklar ve proje ayarları
+└── README.md
+```
+
+### `main.dart` İçindeki Sınıflar
+
+| Sınıf | Tür | Açıklama |
+|---|---|---|
+| `Sorular` | Model | Soru metni, şıklar ve doğru cevap indeksini tutar |
+| `MyApp` | StatelessWidget | Uygulamanın kök widget'ı, tema ayarları burada |
+| `BaslangicEkrani` | StatelessWidget | Karşılama / başlangıç ekranı |
+| `QuizEkrani` | StatefulWidget | Soru gösterimi, zamanlayıcı ve cevap mantığı |
+| `ResultScreen` | StatelessWidget | Quiz sonu skor ekranı |
+
+---
+
+## 🚀 Kurulum
+
+### Gereksinimler
+
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (3.0 ve üzeri)
+- Dart SDK (Flutter ile birlikte gelir)
+- Android Studio veya VS Code (önerilen)
+- Bağlı bir cihaz veya emülatör
+
+### Adımlar
+
+**1. Repoyu klonlayın**
+```bash
+git clone https://github.com/kullanici-adi/quiz-uygulamasi.git
+cd quiz-uygulamasi
+```
+
+**2. Bağımlılıkları yükleyin**
+```bash
+flutter pub get
+```
+
+**3. Uygulamayı çalıştırın**
+```bash
+flutter run
+```
+
+> Birden fazla cihaz bağlıysa `flutter run -d <cihaz_id>` ile hedef cihazı belirtebilirsiniz.
+
+### Derleme (Build)
+
+```bash
+# Android APK
+flutter build apk --release
+
+# iOS (yalnızca macOS)
+flutter build ios --release
+```
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+- **Flutter** — UI framework
+- **Dart** — Programlama dili
+- **Material 3** — Tasarım sistemi
+- **dart:async** — Zamanlayıcı (Timer) için
+
+---
+
+## 📄 Lisans
+
+Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
